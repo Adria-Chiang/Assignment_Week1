@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+	<title>assgn</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body{
+			margin:0px; font-size: 20px;
+		}
+		nav{
+			display: flex; margin-top: 10px; margin-bottom: 10px;
+		}
+		nav>.name{
+			flex:none; width: 200px; 
+		}
+		nav>.white{
+			flex: auto;
+		}
+		nav>.item{
+			flex: none; width:100px; text-align: right;
+		}
+		nav>.menu{
+			flex:; none; width: 100px; 
+		}
+		.burger{
+			width: 37.5px; height: 23px; display: none;
+			position: absolute; top:10px; right: 0px;
+		}
+
+		.block{
+			background-color: #D2B4DE; width: 100%vw; height: 300px; font-size: 40px; margin-top: 10px; 
+			display: flex; align-items: center; justify-content: center;
+		}
+		.content{
+			width: 1200px; margin-right: auto; margin-left: auto; margin-top: 20px;
+			display: flex; flex-wrap: wrap; justify-content: center;
+		}
+		@media (max-width: 1200px){
+			.content{
+				width: 90%; display: flex; flex-wrap: wrap;
+			}
+		}
+
+		.box{
+			background-color: #F4ECF7; flex: none;
+			width: 280px; height: 240px; margin: 10px;  
+			margin-bottom: 25px;
+		}
+		.word{
+			font-size: 20px; font-family: "微軟正黑體";
+			text-align: center; padding: 10px 20px;
+		}
+
+		@media (max-width: 1200px){
+			.box{
+				width: 45%; 
+			}
+		}
+		@media (max-width: 600px){
+			.box{
+				width: 90%;
+			}
+			.item{
+				display: none;
+			}
+			.burger{
+				display: block;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="name">My Website</div>
+		<div class="white"></div>
+		<div><img src="burger.png" class="burger" /></div>
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+	</nav>
+	<div class="block">Welcome to My Home</div>
+	<div class="content">
+		<div class="box">
+			<img src="la.jpg" style= "width: 100%; height: 188.6px" />
+			<div class="word">洛杉磯</div>
+		</div>
+		<div class="box">
+			<img src="sf.jpg" style="width: 100%; height: 188.6px"/>
+			<div class="word">舊金山</div>
+		</div>
+		<div class="box">
+			<img src="seattle.jpg" style="width: 100%; height: 188.6px"/>
+			<div class="word">西雅圖</div>
+		</div>
+		<div class="box">
+			<img src="lv3.jpg" style="width: 100%; height: 188.6px;"/>
+			<div class="word">拉斯維加斯</div>
+		</div>
+		<div class="box">
+			<img src="gc.jpg" style="width: 100%;height: 188.6px"/>
+			<div class="word">大峽谷</div>
+		</div>
+		<div class="box">
+			<img src="cg.jpg" style="width: 100%; height: 188.6px"/>
+			<div class="word">芝加哥</div>
+		</div>
+		<div class="box">
+			<img src="ny.jpg" style="width: 100%; height: 188.6px"/>
+			<div class="word">紐約</div>
+		</div>
+		<div class="box">
+			<img src="fl.jpg" style="width: 100%; height: 188.6px"/>
+			<div class="word">佛羅里達</div>
+		</div>
+
+	</div>
+
+
+</body>
